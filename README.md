@@ -1,4 +1,4 @@
-`Bootstrap-Portfolio (Homework #2, Part 2)`
+`Bootstrap-Portfolio (Homework #2, Part 1)`
 
 
 # Responsiveness Assignment
