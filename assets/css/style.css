@@ -1,0 +1,264 @@
+
+/* ===== global styles ===== */
+html {
+    background: #ccc url(../images/what-the-hex.png);
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+p, li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+}
+
+div#outerDiv {
+    /* width: 960px; */
+    margin: 0 auto;
+}
+
+/* ===== header styles ===== */
+
+#header {
+    height: 72px;         /* 7.5% of main width (960) */
+    width: 960px;
+    
+    position: relative;    
+    margin: 0 auto;       /* center block */
+}
+
+#outerDiv div#headerHome {
+    position: absolute;
+    padding: 0 25px 0 25px;
+    line-height: 72px;
+    
+    color: #fff;
+
+    font-size: 2em;
+    background-color: #4aaaa5;
+}
+
+#header #headerMenu {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#headerMenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#headerMenu li {
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+#headerMenu li a:link, #headerMenu li a:visited {
+    display: block;
+    text-decoration: none;
+    padding: 0 25px 0 25px;
+    line-height: 55px; /* 72 - 5 */
+    font-size: 1em;
+    color: #777777;
+    border-bottom: 7px solid #fff;
+}
+
+#headerMenu li a:hover, #headerMenu li a:active {
+    border-bottom: 7px solid #4aaaa5;
+    color: #4aa;
+}
+
+#headerMenu li a.current {
+    border-bottom: 7px solid #4aaaa5;
+}
+
+#headerMenu li a.current:hover {
+    color: #777777;
+    cursor: default;
+}
+
+/* ===== content styles ==== */
+
+#content {
+    background: #ccc url(../images/what-the-hex.png);
+    border-top: 2px solid #cccccc;
+    /* background-color: none; */
+    
+    /* height: 100%; */
+    /* overflow: auto; */
+    /* position: absolute; */
+    /* border: 1px solid black; */
+}
+
+#content div#mainContent {
+    width: 960px;
+
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 200px;
+   
+    background-color: #fff;
+    border: 2px solid #dddddd;
+}
+
+#mainContent h1 {
+    padding: 10px 20px 15px 5px;
+    margin: 20px 20px 20px 20px;
+    color: #4aaaa5;
+    border-bottom: 3px solid #eeeeee;
+}
+
+#mainContent p {
+    position: relative;
+    margin-left: 20px;
+    margin-right: 30px;
+    line-height: 2.0em;
+}
+
+/* ===== image styles ===== */
+
+img.homepic {
+    display: block;
+    /* content: url(''); */
+    width: 250px; /* Width of new image */
+    height: 250px; /* Height of new image */
+    float: left;
+    /* padding: 5px 20px 20px 20px; */
+    box-shadow: 8px 8px 10px #aaa;
+    border-radius: 5%;
+    margin: 5px 30px 10px -15px;
+}
+
+#portfolio {
+    width: 750px;
+    overflow: hidden;
+}
+
+.imgContainer {
+    /* width: 300px; */
+    float: left;
+    /* border: 1px solid red; */
+    margin-right: -20px;
+    margin-bottom: -60px;
+}
+
+.imgContainer img {
+    /* display: inline-block; */
+    width: 300px; /* Width of new image */
+    height: 200px; /* Height of new image */
+    padding: 5px 10px 20px 20px;
+    object-fit: cover;
+    object-position: 0 25%;
+}
+
+.imgContainer:hover {
+    opacity: 0.5;    
+}
+
+figure img {
+    object-fit: cover;
+    object-position: 0 5%;
+}
+
+.text-block p {
+    position: relative;
+    bottom: 95px;
+    background-color: #4aaaa5;;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    width: 300px;
+    text-align: center;
+    padding: 7px 0;
+  }
+
+
+/* ===== form styles ===== */
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    /* border-radius: 4px; */
+    /* background-color: #f8f8f8; */
+    /* resize: none; */
+}
+
+#mainContent form {
+    padding-left: 20px;
+    padding-right: 20px;
+    /* border: 1px solid red; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+}
+
+input[type=submit] {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-top: -20px;
+    margin-bottom: 15px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #499995;
+  }
+  
+/* ===== footer styles ===== */
+
+div#footer {
+    clear: both;
+    background: transparent;
+
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+#footer p {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    line-height: 72px;
+    text-align: center;
+    background-color: #666666;
+    border-top: 8px solid #4aaaa5;
+    color: white;
+}
+
+/*
+.clearfix::after {
+	content: “”;
+	display: block;
+	clear: both;
+}
+*/
+
+/* ===== Debug Code ===== */
+/*
+
+background-color: #fff;
+border: 1px solid black;
+
+*/
